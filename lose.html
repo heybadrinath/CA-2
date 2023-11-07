@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Margarine' rel='stylesheet'>
     <title>Guess To Call</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./lose.css">
 </head>
-
 <body>
+    <p id="heading"> Guess To Call </p>
 
-<p id="heading"> Guess To Call </p>
-<div id="container">
-    <input type="text" id="userName" maxlength="10" placeholder="Enter Your User Name">
+<div class="content">
+    <img src="./assets/oops.png" alt="oops">
+    <p class="text">Looks Like there are <span id="possibilitiess">300</span> Possible number From The Digits You Did Not Find.</p>
+    <p class="text">Good luck Finding The Number</p>
     <div id="startButton">
         <p class="text">Start</p>
     </div>
 </div>
-
+    
 <footer>
 
     <div id="icons">
@@ -55,4 +56,4 @@
 
 </body>
 </html>
-<script src="./index.js"></script>
+<script src="./lose.js"></script>

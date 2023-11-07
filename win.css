@@ -1,0 +1,89 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #1c0c99, #6a0099, #990096, #be1a93, #de3890);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heading{
+    margin: 50px;
+    color: white;
+    font-family: 'Margarine';
+    font-size: xx-large;  
+    text-align: center;
+}
+
+.text{
+    color: white;
+    font-family: 'Margarine';
+    font-size: large;  
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+#startButton{
+    align-self: center;
+    margin-top: 5%;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #8affff, #66e4f3, #44cae6, #25afd7, #0694c6);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+footer{
+    height: 140px;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#image{
+    height: 200px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6%;
+}
+@media (max-width: 575px) {
+
+    
+    body{
+        height: 90vh;
+    }
+    footer {
+        position: absolute;
+        bottom: 0%;
+    }
+    #image{
+        height: 110px;
+    }
+
+}
