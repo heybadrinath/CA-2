@@ -1,0 +1,178 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #1c0c99, #6a0099, #990096, #be1a93, #de3890);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 3%;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+#clues, #tries, #timerBox{
+    height: 90px;
+    background-color: #F7DDA4;
+    border-radius: 18px;
+    
+}
+
+
+.topText{
+    color: rgb(0, 0, 0);
+    font-family: 'Margarine';
+    font-size: large;  
+    padding: 10px;
+    text-decoration: none;
+}
+
+#clueInput{
+    color: rgb(0, 0, 0);
+    font-family: 'Margarine';
+    font-size: small;  
+    margin: 10px;
+}
+
+#top{
+    justify-content: space-around;
+}
+#clues{
+    width: 40%;
+    margin-bottom: 30px;
+    padding: 2px;
+}
+
+#cluesBeside{
+    width: 40%;
+    justify-content: space-between;
+}
+#tries{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timerBox{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+#number{
+    width: 90%;
+    height: 60px;
+    background-color: #F7DDA4;
+    border-radius: 18px;
+    margin: 3% auto;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.digit{
+    height: 50px;
+    width: 50px;
+    background-color: #2A221E;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.whiteText{
+    color: white;
+    font-family: 'Margarine';
+    font-size: larger;
+}
+
+
+.box{
+    height: 120px;
+    width: 170px;
+    background-color: #F7DDA4;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+
+
+#boxes{
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+img{
+    max-width: 130px;
+    min-width: none;
+    
+}
+
+#inputs{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4%;
+}
+
+#checkButton{
+    height: 50px;
+    width: 170px;
+    background-color: #4D424D;
+    border-radius: 18px;
+    margin: 0px 2px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+#digitInput{
+    height: 50px;
+    width: 170px;
+    background-color: #7F7E90;
+    border-radius: 18px;
+    border: 0px;
+    text-align: center;
+    margin: 0px 2px;
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    #top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cluesBeside{
+        width: 80%;
+        justify-content: space-between;
+    }
+
+
+    .digit{
+        height: 30px;
+        width: 30px;
+        margin: auto 1px;
+        border-radius: 8px;
+
+    }
+    #number{
+        padding:5px;
+    }
+    
+}

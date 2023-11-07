@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Margarine' rel='stylesheet'>
+    <title>Guess To Call</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+<div id="container">
+
+    <div class="flex" id="top">
+
+        <div id="clues">
+            <p class="topText">Clue:</p>
+            <span id="clueInput">The sum of even digits is 13 </span>
+        </div>
+
+        <div class="flex" id="cluesBeside">
+            <div id="tries">
+                <span class="topText">Tries Left:</span>
+                <span id="triesLeft" class="topText">5</span>
+            </div>
+
+            <div id="timerBox">
+                <span id="timer" class="topText">20</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div id="number">
+    
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+        <div class="digit"><span class="digitEntry whiteText"></span></div>
+
+    </div>
+    
+    
+    <div class="flex" id="boxes">
+    
+        <div class="box">
+            <img src="./assets/congrats.png" alt="imageForFun">
+        </div>
+        <div class="box">
+
+            <span class="topText" id="liveClues">The number You entered is greater than the digit</span>
+
+        </div>
+
+    </div>
+    
+    
+    <div class="flex" id="inputs">
+
+        <input type="text" id="digitInput" placeholder="Enter Digit" class="whiteText" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+
+        <div id="checkButton" class="whiteText">Check</div>
+
+    
+    </div>
+
+</div>
+
+
+
+
+
+    
+</body>
+</html>
+<script src="./game.js"></script>
