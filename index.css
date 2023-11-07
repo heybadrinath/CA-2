@@ -50,8 +50,7 @@ body{
     border-radius: 10px;
     background-image: linear-gradient(to bottom, #8affff, #66e4f3, #44cae6, #25afd7, #0694c6);
     background-size: cover;
-    background-repeat: no-repeat;
-       
+    background-repeat: no-repeat;  
 }
 
 .text{
