@@ -135,6 +135,7 @@ img{
     margin: 0px 2px;
     text-align: center;
     padding-top: 1%;
+    cursor: pointer;
 }
 
 #digitInput{

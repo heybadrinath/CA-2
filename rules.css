@@ -52,6 +52,7 @@ ul {
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #iDont{
