@@ -82,11 +82,11 @@ body{
 
 
 .digit span{
-    animation: flip 2s infinite;
+    animation: flip 1s infinite;
 }
 
 @keyframes flip {
-    0%,80% {
+    0%,50% {
       transform: rotateY(360deg) 
     }
   }

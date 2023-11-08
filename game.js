@@ -53,8 +53,7 @@ function checkIndex() {
     const inputValue = document.getElementById("digitInput").value;
     const PhoneNumber = number.join("")
     localStorage.setItem("PhoneNumber", PhoneNumber)
-    if (currentDigitIndex >= 9) {
-
+    if (currentDigitIndex > 9) {
         window.location.href = "./win.html";
     } else if (tries == 0) {
         if (inputValue === number[currentDigitIndex].toString()) {
@@ -64,6 +63,7 @@ function checkIndex() {
             tries = 3;
             triesBox.textContent = tries;
             liveClueBox.textContent = "You Have Guessed The Correct Digit";
+            correctAnswerSound.play()
             liveImageCaption("good");
             resetTimer()
         } else {
@@ -71,7 +71,7 @@ function checkIndex() {
             localStorage.setItem("tries", tries);
             window.location.href = "./lose.html";
         }
-    } else if(tries>0 && currentDigitIndex <9 ){
+    } else if(tries>=0 && currentDigitIndex <=9 ){
         
         if (!correctAnswerSound.paused) {
             correctAnswerSound.pause();
@@ -93,7 +93,9 @@ function checkIndex() {
             timerAudio.pause()
             timerAudio.currentTime = 0
             resetTimer()
-
+            if(currentDigitIndex==10){
+                window.location.href = "./win.html"
+            }
             
         } else {
             tries--;
