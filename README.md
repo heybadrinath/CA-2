@@ -26,6 +26,15 @@ There will also be a few clues to guess the digits in the mobile number.
 </p>
 
 <h3>
+Working Link:
+</h3>
+
+<p>
+https://heybadrinath.github.io/CA-2/
+</p>
+
+
+<h3>
 Figma Link:
 </h3>
 <p>
