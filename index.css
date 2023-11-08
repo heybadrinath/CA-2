@@ -62,10 +62,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat; 
     cursor: pointer; 
-    transition: 1s;
 }
 
 
+
+@keyframes flip {
+    0%, 50% {
+        transform: rotateY(360deg);
+    }
+}
+
+p.rotate {
+    animation: flip 1.5s infinite;
+}
 
 .text{
     color: white;

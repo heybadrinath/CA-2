@@ -47,6 +47,16 @@ body{
     cursor: pointer;
 }
 
+@keyframes flip {
+    0%, 50% {
+        transform: rotateY(360deg);
+    }
+}
+
+p.rotate {
+    animation: flip 1.5s linear infinite;
+}
+
 footer{
     height: 140px;
     width: 100%;
