@@ -17,7 +17,20 @@ body{
     color: white;
     font-family: 'Margarine';
     font-size: xx-large; 
+    animation: glow 2s ease-in-out infinite alternate;
+
 }
+
+
+@keyframes glow {
+    from {
+      text-shadow: 0px 10px 10px #000000;
+    }
+    to {
+      text-shadow: 0px 20px 5px #00e5ff, 0 0 5px #e5ff00;
+    }
+  }
+
 
 #container{
     margin: 5% 10%;
