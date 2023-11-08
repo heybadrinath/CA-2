@@ -8,6 +8,23 @@ Game Story:
 you are trying to find a celebrities number from a puzzle you found but to get that number you have to guess each digits with a given number of tries. If you fail to guess to correct digit within the given tries or if the time runs out you will forever lose the chance to get that number…
 </p>
 
+
+<h3>
+Game Rules:
+</h3>
+
+<p>
+You need to find a phone number by guessing each digit of the number
+<br>
+You will have 5 tries to guess each digit and if you don’t guess the correct digit it’s game over.
+<br>
+There is also a 20 second timer for each digit and you need to guess before the timer ends.
+<br>
+If you guess all the digits with in the given time will win and get the mobile number.
+<br>
+There will also be a few clues to guess the digits in the mobile number.
+</p>
+
 <h3>
 Figma Link:
 </h3>
