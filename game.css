@@ -159,11 +159,14 @@ img{
         align-items: center;
     }
 
+    #clues{
+        width: 80%;
+        padding:0px  5px;
+    }
     #cluesBeside{
         width: 80%;
         justify-content: space-between;
     }
-
 
     .digit{
         height: 30px;
