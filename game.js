@@ -45,8 +45,8 @@ const triesBox = document.getElementById("triesLeft")
 const liveClueBox = document.getElementById("liveClues")
 
 
-const correctAnswerSound = new Audio("./assets/copper-bell-ding-3-172687.mp3")
-const wrongAnswerSound = new Audio("./assets/wronganswer-37702.mp3")
+const correctAnswerSound = document.getElementById("correctAnswerSound");
+const wrongAnswerSound = document.getElementById("wrongAnswerSound");
 
 
 function checkIndex() {
@@ -72,6 +72,15 @@ function checkIndex() {
             window.location.href = "./lose.html";
         }
     } else if(tries>0 && currentDigitIndex <9 ){
+        
+        if (!correctAnswerSound.paused) {
+            correctAnswerSound.pause();
+            correctAnswerSound.currentTime = 0;
+        }
+        if (!wrongAnswerSound.paused) {
+            wrongAnswerSound.pause();
+            wrongAnswerSound.currentTime = 0;
+        }
         if (inputValue === number[currentDigitIndex].toString()) {
             const numberBoxes = document.querySelectorAll(".digitEntry");
             numberBoxes[currentDigitIndex].innerHTML = inputValue;
