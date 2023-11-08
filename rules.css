@@ -17,7 +17,7 @@ body{
     color: white;
     font-family: 'Margarine';
     font-size: xx-large; 
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
 
 }
 
