@@ -12,6 +12,6 @@ const triesBox = document.getElementById("tries")
 const possibilities = document.getElementById("possibilities")
 
 if(tries != 0) {
-    triesBox.textContent = `You Should Have Guessed You Still Had ${tries} Left`
+    triesBox.textContent = `You Should Have Guessed You Still Had ${tries} tries Left`
 }
 possibilities.textContent = probability

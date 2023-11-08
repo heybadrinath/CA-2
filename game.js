@@ -43,6 +43,12 @@ document.getElementById("checkButton").addEventListener('click', checkIndex);
 let tries = 3;
 const triesBox = document.getElementById("triesLeft")
 const liveClueBox = document.getElementById("liveClues")
+
+
+const correctAnswerSound = new Audio("./assets/copper-bell-ding-3-172687.mp3")
+const wrongAnswerSound = new Audio("./assets/wronganswer-37702.mp3")
+
+
 function checkIndex() {
     const inputValue = document.getElementById("digitInput").value;
     const PhoneNumber = number.join("")
@@ -72,14 +78,19 @@ function checkIndex() {
             currentDigitIndex++;
             tries = 3
             triesBox.textContent = tries
+            correctAnswerSound.play()
             liveClueBox.textContent = "You Have Guessed The Correct Digit"
             liveImageCaption("good")
+            timerAudio.pause()
+            timerAudio.currentTime = 0
             resetTimer()
+
             
         } else {
             tries--;
             triesBox.textContent = tries
             liveClue(number[currentDigitIndex], inputValue)
+            wrongAnswerSound.play()
         }
     }
 }
@@ -121,9 +132,13 @@ function liveImageCaption(answer) {
 
 let timerValue = 15;
 let timerInterval;
+const timerAudio = new Audio("./assets/ticking-clock_1-27477.mp3")
+timerAudio.volume = 0.5
+
 
 function startTimer() {
     timerInterval = setInterval(updateTimer, 1000);
+    timerAudio.play()
 }
 
 function updateTimer() {
@@ -136,13 +151,13 @@ function updateTimer() {
     }
     localStorage.setItem("tries", tries);
     localStorage.setItem("index", currentDigitIndex);
-
 }
 
 function resetTimer() {
     clearInterval(timerInterval);
     timerValue = 15;
     document.getElementById("timer").textContent = timerValue;
+    timerAudio.play()
     startTimer();
 }
 
