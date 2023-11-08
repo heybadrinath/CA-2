@@ -6,3 +6,7 @@ document.getElementById("startButton").addEventListener(('click'),()=>{
 
     window.location.href = "./story.html"
 })
+
+const music = new Audio("./assets/comic5-25269.mp3")
+music.play();
+music.loop = true
