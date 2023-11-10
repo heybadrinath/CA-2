@@ -14,15 +14,15 @@ Game Rules:
 </h3>
 
 <p>
-You need to find a phone number by guessing each digit of the number
+* You need to find a phone number by guessing each digit of the number
 <br>
-You will have 5 tries to guess each digit and if you don’t guess the correct digit it’s game over.
+* You will have 5 tries to guess each digit and if you don’t guess the correct digit it’s game over.
 <br>
-There is also a 20 second timer for each digit and you need to guess before the timer ends.
+* There is also a 20 second timer for each digit and you need to guess before the timer ends.
 <br>
-If you guess all the digits with in the given time will win and get the mobile number.
+* If you guess all the digits with in the given time will win and get the mobile number.
 <br>
-There will also be a few clues to guess the digits in the mobile number.
+* There will also be a few clues to guess the digits in the mobile number.
 </p>
 
 <h3>
